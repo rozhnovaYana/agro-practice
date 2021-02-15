@@ -96,6 +96,15 @@
         .contact-form label
             border-bottom: none
 @media screen and ( max-width: 993px )
+    .fab
+        background: white
+        color: $main_color
+        font-size: 4rem
+    .promo-nav
+        justify-content: flex-start
+        padding: 20% 0
+        &__soc
+            width: 60%
     html
         font-size: 18px
     .humb
@@ -151,6 +160,12 @@
             flex-direction: column
             z-index: 11
             left: inherit
+            transition: 0.5s all
+            right: -100%
+            opacity: 0
+            &_active
+                opacity: 1
+                right: 0
             &__cross
                 display: block
                 position: fixed
@@ -161,6 +176,7 @@
                 flex-direction: column
                 width: 70%
                 align-items: flex-start
+                margin-bottom: 40px
 
             &__item
                 padding: 20px 30px

@@ -17,19 +17,19 @@
     </div>
     <div id="slider">
     <section id="promo" class="promo">
-        <nav class="promo-nav">
-            <div class="promo-nav__cross">
+        <nav class="promo-nav" id="menu">
+            <div class="promo-nav__cross cross">
                 &#10006;	
             </div>
             <ul class="promo-nav__list">
-                <li class="promo-nav__item promo-nav__item_active"><a href="#">Головна</a></li>
-                <li class="promo-nav__item"><a href="#">Про Нас</a></li>
-                <li class="promo-nav__item"><a href="#">Контакти</a></li>
+                <li class="promo-nav__item promo-nav__item_active menu-item"><a href="#promo">Головна</a></li>
+                <li class="promo-nav__item menu-item"><a href="#about">Про Нас</a></li>
+                <li class="promo-nav__item menu-item"><a href="#contact">Контакти</a></li>
             </ul>
             <ul class="promo-nav__soc">
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/fb.svg" alt="facebook"></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/twit.svg" alt="twitter"></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
+                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
         <div class="promo-contact">
@@ -66,19 +66,19 @@
 
         </div>
     </section>
-    <section class="promo about">
-        <nav class="promo-nav">
+    <section class="promo about" id="about" >
+        <!-- <nav class="promo-nav">
             <ul class="promo-nav__list">
                 <li class="promo-nav__item"><a href="#">Головна</a></li>
                 <li class="promo-nav__item promo-nav__item_active"><a href="#">Про Нас</a></li>
                 <li class="promo-nav__item"><a href="#">Контакти</a></li>
             </ul>
             <ul class="promo-nav__soc">
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/fb.svg" alt="facebook"></a></li>
+                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                 <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/twit.svg" alt="twitter"></a></li>
                 <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
             </ul>
-        </nav>
+        </nav> -->
         <div class="promo-contact about-aside">
             <div class="promo-contact__wrapper about-aside__wrapper">
                 <div class="promo-contact__logo">
@@ -130,8 +130,8 @@
 
         </div>
     </section>
-    <section class="contact promo ">
-        <nav class="promo-nav contact-nav">
+    <section class="contact promo " id="contact">
+        <!-- <nav class="promo-nav contact-nav">
             <ul class="promo-nav__list">
                 <li class="promo-nav__item "><a href="#">Головна</a></li>
                 <li class="promo-nav__item"><a href="#">Про Нас</a></li>
@@ -142,7 +142,7 @@
                 <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/twit.svg" alt="twitter"></a></li>
                 <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
             </ul>
-        </nav>
+        </nav> -->
         <div class="promo-contact about-aside contact-aside">
             <div class="promo-contact__wrapper about-aside__wrapper">
                 <div class="promo-contact__logo">
@@ -211,6 +211,7 @@
     </footer>
     </div>
      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+       <script src="https://kit.fontawesome.com/9bedbb219d.js" crossorigin="anonymous"></script>
     <script src="./js/bundle.js"></script>
 </body>
 </html>
