@@ -1,0 +1,41 @@
+$main_color: #00AB21
+=after
+    font-style: normal
+    font-weight: 300
+    font-size: 0.8em
+    line-height: 1.2em
+    color: #6A6A6A
+    display: block
+    position: absolute
+    bottom: -100%
+    left: 50%
+    transform: translateX(-50%)
+=centerBottom
+    left: 50%
+    bottom: 0%
+    top: inherit
+    transform: translateY(-50%)
+=contactFormInput
+    font-style: normal
+    font-weight: normal
+    font-size: 1rem
+    line-height: 1.5em
+    color: #FFFFFF
+    background: transparent
+    padding: 20px 0
+    border: none
+    height: 64px
+    font-family: 'Bw Surco'
+    border-bottom: 2px solid rgba(255, 255, 255, 0.34)
+    @media screen and ( max-height:1000px  )
+        @media screen and ( max-width: 2450px )
+            height: 40px
+    @media screen and ( max-height:818px  )
+        @media screen and ( max-width: 1750px )
+            height: 25px
+        @media screen and ( max-width: 1300px )
+            height: 10px
+    @media screen and ( max-width: 992px  )
+        color: black
+        border-bottom: 2px solid grey
+        padding: 0

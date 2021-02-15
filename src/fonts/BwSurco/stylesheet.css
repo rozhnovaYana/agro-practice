@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-BookItalic.eot');
+    src: local('Bw Surco Book Italic'), local('BwSurco-BookItalic'),
+        url('BwSurco-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-BookItalic.woff2') format('woff2'),
+        url('BwSurco-BookItalic.woff') format('woff'),
+        url('BwSurco-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-LightItalic.eot');
+    src: local('Bw Surco Light Italic'), local('BwSurco-LightItalic'),
+        url('BwSurco-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-LightItalic.woff2') format('woff2'),
+        url('BwSurco-LightItalic.woff') format('woff'),
+        url('BwSurco-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-Light.eot');
+    src: local('Bw Surco Light'), local('BwSurco-Light'),
+        url('BwSurco-Light.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-Light.woff2') format('woff2'),
+        url('BwSurco-Light.woff') format('woff'),
+        url('BwSurco-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-Regular.eot');
+    src: local('Bw Surco Regular'), local('BwSurco-Regular'),
+        url('BwSurco-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-Regular.woff2') format('woff2'),
+        url('BwSurco-Regular.woff') format('woff'),
+        url('BwSurco-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-Black.eot');
+    src: local('Bw Surco Black'), local('BwSurco-Black'),
+        url('BwSurco-Black.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-Black.woff2') format('woff2'),
+        url('BwSurco-Black.woff') format('woff'),
+        url('BwSurco-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-Italic.eot');
+    src: local('Bw Surco Italic'), local('BwSurco-Italic'),
+        url('BwSurco-Italic.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-Italic.woff2') format('woff2'),
+        url('BwSurco-Italic.woff') format('woff'),
+        url('BwSurco-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-BoldItalic.eot');
+    src: local('Bw Surco Bold Italic'), local('BwSurco-BoldItalic'),
+        url('BwSurco-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-BoldItalic.woff2') format('woff2'),
+        url('BwSurco-BoldItalic.woff') format('woff'),
+        url('BwSurco-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-BlackItalic.eot');
+    src: local('Bw Surco Black Italic'), local('BwSurco-BlackItalic'),
+        url('BwSurco-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-BlackItalic.woff2') format('woff2'),
+        url('BwSurco-BlackItalic.woff') format('woff'),
+        url('BwSurco-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-Book.eot');
+    src: local('Bw Surco Book'), local('BwSurco-Book'),
+        url('BwSurco-Book.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-Book.woff2') format('woff2'),
+        url('BwSurco-Book.woff') format('woff'),
+        url('BwSurco-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-Medium.eot');
+    src: local('Bw Surco Medium'), local('BwSurco-Medium'),
+        url('BwSurco-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-Medium.woff2') format('woff2'),
+        url('BwSurco-Medium.woff') format('woff'),
+        url('BwSurco-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-Bold.eot');
+    src: local('Bw Surco Bold'), local('BwSurco-Bold'),
+        url('BwSurco-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-Bold.woff2') format('woff2'),
+        url('BwSurco-Bold.woff') format('woff'),
+        url('BwSurco-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bw Surco';
+    src: url('BwSurco-MediumItalic.eot');
+    src: local('Bw Surco Medium Italic'), local('BwSurco-MediumItalic'),
+        url('BwSurco-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('BwSurco-MediumItalic.woff2') format('woff2'),
+        url('BwSurco-MediumItalic.woff') format('woff'),
+        url('BwSurco-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
