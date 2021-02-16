@@ -10,14 +10,7 @@
     <title>Agro-practice</title>
 </head>
 <body>
-    <div class="humb">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div id="slider">
-    <section id="promo" class="promo">
-        <nav class="promo-nav" id="menu">
+    <nav class="promo-nav" id="menu">
             <div class="promo-nav__cross cross">
                 &#10006;	
             </div>
@@ -32,19 +25,26 @@
                 <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
+    <div class="humb">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="slider">
+    <section id="promo" class="promo" data-menu="1">
         <div class="promo-contact">
             <div class="promo-contact__wrapper">
                 <div class="promo-contact__logo">
                     <img src="./img/logo.svg" alt="logo">
                 </div>
-                <form action="#" class="promo-contact__form">
+                <form action="#" class="promo-contact__form" id="data-form">
                     <div class="promo-contact__form-title">Amet <span>minim mollit</span> non deserunt aliqua </div>
                     <div class="promo-contact__form-subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </div>
                     <div class="promo-contact__form-input promo-contact__form-input_name">
-                        <input type="text" placeholder="Людмила">
+                        <input type="text" placeholder="Людмила" name="name">
                     </div>
                     <div class="promo-contact__form-input promo-contact__form-input_tel">
-                        <input type="text" placeholder="+38 (067) 123 - 45 - 67">
+                        <input type="tel" placeholder="+38 (067) 123 - 45 - 67" name="phone" class="tel">
                     </div>
                     <button class="promo-contact__form-btn" >Відправити</button>
                 </form>
@@ -57,28 +57,14 @@
 
         </div>
         <div class="promo-info">
-            <div class="promo-info__img">
-                
+            <div class="promo-info__img">     
                     <img src="./img/promo/promo.png" alt="man">
-              
-            
             </div>
 
         </div>
     </section>
-    <section class="promo about" id="about" >
-        <!-- <nav class="promo-nav">
-            <ul class="promo-nav__list">
-                <li class="promo-nav__item"><a href="#">Головна</a></li>
-                <li class="promo-nav__item promo-nav__item_active"><a href="#">Про Нас</a></li>
-                <li class="promo-nav__item"><a href="#">Контакти</a></li>
-            </ul>
-            <ul class="promo-nav__soc">
-                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/twit.svg" alt="twitter"></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
-            </ul>
-        </nav> -->
+    <section class="promo about" id="about" data-menu="2">
+       
         <div class="promo-contact about-aside">
             <div class="promo-contact__wrapper about-aside__wrapper">
                 <div class="promo-contact__logo">
@@ -108,8 +94,6 @@
                         </li>
                     </ul>
                 </div>
-
-    
                 <div class="promo-contact__status">
                     <div class="promo-contact__status-item"></div>
                     <div class="promo-contact__status-item  promo-contact__status-item_active" ></div>
@@ -130,19 +114,8 @@
 
         </div>
     </section>
-    <section class="contact promo " id="contact">
-        <!-- <nav class="promo-nav contact-nav">
-            <ul class="promo-nav__list">
-                <li class="promo-nav__item "><a href="#">Головна</a></li>
-                <li class="promo-nav__item"><a href="#">Про Нас</a></li>
-                <li class="promo-nav__item promo-nav__item_active"><a href="#">Контакти</a></li>
-            </ul>
-            <ul class="promo-nav__soc">
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/fb.svg" alt="facebook"></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/twit.svg" alt="twitter"></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
-            </ul>
-        </nav> -->
+    <section class="contact promo " id="contact" data-menu="3">
+       
         <div class="promo-contact about-aside contact-aside">
             <div class="promo-contact__wrapper about-aside__wrapper">
                 <div class="promo-contact__logo">
@@ -179,7 +152,7 @@
         <div class="promo-info about-main contact-main">
             <form action="#" class="contact-form">
                 <input type="text" class="contact-form__input" placeholder="Введіть Ім’я" name="name">
-                <input type="text" class="contact-form__input" placeholder="Введіть Телефон" anme="tel">
+                <input type="text" class="contact-form__input tel" placeholder="Введіть Телефон" name="tel">
                 <input type="email" class="contact-form__input" placeholder="Введіть Електронну пошту" name="email">
                 <div class="select">
                     <input class="select__input" type="hidden" name="specialization"> 
@@ -210,8 +183,7 @@
             </ul>
     </footer>
     </div>
-     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-       <script src="https://kit.fontawesome.com/9bedbb219d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9bedbb219d.js" crossorigin="anonymous"></script>
     <script src="./js/bundle.js"></script>
 </body>
 </html>

@@ -5,28 +5,33 @@ import range from "./modules/range"
 import scrollWrapper from "./modules/scroll"
 import menu from "./modules/menu"
 import smoothScroll from "./modules/smoothScroll"
+import mask from "./modules/mask"
 select()
 range()
 menu(".humb", "#menu", ".cross", ".menu-item", "promo-nav_active")
 smoothScroll("#promo")
 smoothScroll("#about")
 smoothScroll("#contact")
-// scrollWrapper("#slider", 100);
+mask()
+scrollWrapper("#slider", 100);
 
 
 
 
 
-// $('form').submit(function (e) {
-//         e.preventDefault();
+
+const form = document.querySelector("#data-form");
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const dataForm = new FormData(form);
+    fetch("mailer/smart.php", {
+        method: "POST",
+        body:dataForm
+    }).then(() => {
+        form.reset()
+    })
     
-//         $.ajax({
-//             type: "POST",
-//             url: "mailer/smart.php",
-//             data: $(this).serialize()
-//         }).done(function () { 
-//             $(this).find("input").val("");
-//             $('form').trigger('reset');
-//         });
-//         return false;
-//     })
+})
+
+
+

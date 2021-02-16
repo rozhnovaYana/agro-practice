@@ -30,12 +30,9 @@ $mail->addAddress('scream.yv@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Нова заявка від роботодавця (Аутсорсинг)';
+$mail->Subject = 'Нова заявка від роботодавця';
 $mail->Body    = 'Клієнт залишив дані<br><br>Номер телефону: ' . $phone . '<br><br>
-	Імя: ' . $name . '<br>
-	Напрямок роботи: ' . $select. '<br>
-	Кількість працівників: ' . $workers. '<br>
-	E-mail: ' . $email .'<br>';
+	Імя: ' . $name . '<br>';
 
 
 if(!$mail->send()) {
