@@ -32,9 +32,10 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Нова заявка';
 $mail->Body    = 'Клієнт залишив дані<br><br>Номер телефону: ' . $phone . '<br><br>
-	Імя: ' . $name . '<br>';
-
-
+	Імя: ' . $name . '<br>
+	Спеціалізація: ' . $select. '<br>
+	Кількість працівників: ' . $workers. '<br>
+	E-mail: ' . $email .'<br>';
 if(!$mail->send()) {
     return false;
 } else {

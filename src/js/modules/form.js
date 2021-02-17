@@ -1,4 +1,4 @@
-export default function form(formSelector) {
+export default function form(formSelector, url) {
     const form = document.querySelector(formSelector),
         modal = document.querySelector(".modal"),
         input = form.querySelectorAll("input"),
@@ -24,7 +24,7 @@ export default function form(formSelector) {
             });
         if (!errors) {
             const dataForm = new FormData(form);
-        fetch("mailer/smart.php", {
+        fetch(url, {
             method: "POST",
             body: dataForm
         }).then((res) => {

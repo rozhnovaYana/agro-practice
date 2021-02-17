@@ -10,16 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
     select()
     range()
     mask()
-console.log(document.documentElement.clientHeight,document.documentElement.clientWidth )
+    form("#data-form", "mailer/smart.php")
+    form("#order-form","mailer/smart_order.php")
 if (document.documentElement.clientHeight > 500 && document.documentElement.clientWidth > 992) {
     scroll()
+} else if (document.documentElement.clientWidth < 992) {
+    smoothScroll("#promo")
+    smoothScroll("#about")
+    smoothScroll("#contact")
+    menu(".humb", "#menu", ".cross", ".menu-item", "promo-nav_active")
+    
 }
-form("#data-form")
-form("#order-form")
-// smoothScroll("#promo")
-// smoothScroll("#about")
-// smoothScroll("#contact")
-// menu(".humb", "#menu", ".cross", ".menu-item", "promo-nav_active")
+
 })
 
 
