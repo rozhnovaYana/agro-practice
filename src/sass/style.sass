@@ -2,9 +2,17 @@ html
     font-family: 'Bw Surco'
     font-size: 35px
 body
+    position: fixed
     margin: 0
+    padding: 0
     overflow: hidden
+    margin: 0
+    width: 100vw
     height: 100vh
+.slide
+    height: 100%
+    width: 100%
+
 img
 
     width: 100%
@@ -20,9 +28,21 @@ button
 input
     box-sizing: border-box
     width: 100%
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus
+    -webkit-text-fill-color: white
+    transition: background-color 5000s ease-in-out 0s
+
 #slider
-    height: 100%
-    transition: 1s all
+    transition: 2s all
+    padding-right: 0px
 .fab
     background: transparent
     color: white
@@ -34,4 +54,5 @@ input
 @import "./blocks/select"
 @import "./blocks/social"
 @import "./blocks/humb"
+@import "./blocks/modal"
 @import "./blocks/media"

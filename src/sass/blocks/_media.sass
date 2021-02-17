@@ -100,11 +100,6 @@
         background: white
         color: $main_color
         font-size: 4rem
-    .promo-nav
-        justify-content: flex-start
-        padding: 20% 0
-        &__soc
-            width: 60%
     html
         font-size: 18px
     .humb
@@ -149,54 +144,57 @@
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
-    #promo
-        .promo-nav
-            position: fixed
-            width: 70%
-            height: 100vh
+    .promo-nav
+        position: fixed
+        width: 70%
+        height: 100%
+        right: 0
+        top: 0
+        background: white
+        flex-direction: column
+        z-index: 11
+        left: inherit
+        transition: 0.5s all
+        right: -100%
+        opacity: 0
+        justify-content: flex-start
+        &__soc
+            width: 40%
+        &_active
+            opacity: 1
             right: 0
-            top: 0
-            background: white
+        &__cross
+            display: block
+            position: fixed
+            top: 18px
+            right: 24px
+            font-size: 48px
+        &__list
             flex-direction: column
-            z-index: 11
-            left: inherit
-            transition: 0.5s all
-            right: -100%
-            opacity: 0
-            &_active
-                opacity: 1
-                right: 0
-            &__cross
-                display: block
-                position: fixed
-                top: 18px
-                right: 24px
-                font-size: 48px
-            &__list
-                flex-direction: column
-                width: 70%
-                align-items: flex-start
-                margin-bottom: 40px
+            width: 70%
+            align-items: flex-start
+            margin-top: 20%
+            margin-bottom: 150px
 
-            &__item
-                padding: 20px 30px
+        &__item
+            padding: 20px 30px
+            width: 100%
+            position: relative
+            margin-left: 20px
+            &::after
+                content: ""
                 width: 100%
-                position: relative
-                margin-left: 20px
-                &::after
-                    content: ""
-                    width: 100%
-                    background: #F1F1F1
-                    height: 2px
-                    position: absolute
-                    left: 0
-                    bottom: 0
-                a
-                    font-style: normal
-                    font-weight: normal
-                    font-size: 44px
-                    line-height: 1.2em
-                    color: #6A6A6A
+                background: #F1F1F1
+                height: 2px
+                position: absolute
+                left: 0
+                bottom: 0
+            a
+                font-style: normal
+                font-weight: normal
+                font-size: 44px
+                line-height: 1.2em
+                color: #6A6A6A
     .about
         padding: 93px 0
         flex-direction: column

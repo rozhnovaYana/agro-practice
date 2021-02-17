@@ -10,14 +10,21 @@
     <title>Agro-practice</title>
 </head>
 <body>
+    <div class="modal">
+            <div class="modal-wrapper">
+                <div class="modal-text modal-check">&#10003;</div>
+                <div class="modal-text text">Ваш запит успішно надіслано</div>
+            </div>
+            
+        </div>
     <nav class="promo-nav" id="menu">
             <div class="promo-nav__cross cross">
                 &#10006;	
             </div>
             <ul class="promo-nav__list">
-                <li class="promo-nav__item promo-nav__item_active menu-item"><a href="#promo">Головна</a></li>
-                <li class="promo-nav__item menu-item"><a href="#about">Про Нас</a></li>
-                <li class="promo-nav__item menu-item"><a href="#contact">Контакти</a></li>
+                <li class="promo-nav__item promo-nav__item_active menu-item"  data-menu="1"><a href="#promo">Головна</a></li>
+                <li class="promo-nav__item menu-item" data-menu="2"><a href="#about">Про Нас</a></li>
+                <li class="promo-nav__item menu-item" data-menu="3"><a href="#contact">Контакти</a></li>
             </ul>
             <ul class="promo-nav__soc">
                 <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
@@ -31,6 +38,7 @@
         <span></span>
     </div>
     <div id="slider">
+    <div class="slide">
     <section id="promo" class="promo" data-menu="1">
         <div class="promo-contact">
             <div class="promo-contact__wrapper">
@@ -48,10 +56,10 @@
                     </div>
                     <button class="promo-contact__form-btn" >Відправити</button>
                 </form>
-                <div class="promo-contact__status">
-                    <div class="promo-contact__status-item promo-contact__status-item_active"></div>
-                    <div class="promo-contact__status-item" ></div>
-                    <div class="promo-contact__status-item"></div>
+                <div class="promo-contact__status" data-status="1">
+                    <a href="#promo" class="status" data-menu="1"><div class="promo-contact__status-item promo-contact__status-item_active" ></div></a>
+                    <a href="#about" class="status" data-menu="2"><div class="promo-contact__status-item"></div></a>
+                    <a href="#contact" class="status" data-menu="3"><div class="promo-contact__status-item"></div></a>
                 </div>
             </div>
 
@@ -63,6 +71,8 @@
 
         </div>
     </section>
+    </div>
+    <div class="slide">
     <section class="promo about" id="about" data-menu="2">
        
         <div class="promo-contact about-aside">
@@ -94,10 +104,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="promo-contact__status">
-                    <div class="promo-contact__status-item"></div>
-                    <div class="promo-contact__status-item  promo-contact__status-item_active" ></div>
-                    <div class="promo-contact__status-item"></div>
+                <div class="promo-contact__status" >
+                    <a href="#promo" class="status" data-menu="1"><div class="promo-contact__status-item" ></div></a>
+                    <a href="#about" class="status" data-menu="2"><div class="promo-contact__status-item promo-contact__status-item_active" ></div></a>
+                    <a href="#contact" class="status" data-menu="3"><div class="promo-contact__status-item" ></div></a>
                 </div>
             </div>
 
@@ -114,6 +124,8 @@
 
         </div>
     </section>
+    </div>
+    <div class="slide">
     <section class="contact promo " id="contact" data-menu="3">
        
         <div class="promo-contact about-aside contact-aside">
@@ -139,18 +151,16 @@
                         </li>
                     </ul>
                 </div>
-
-    
-                <div class="promo-contact__status">
-                    <div class="promo-contact__status-item"></div>
-                    <div class="promo-contact__status-item" ></div>
-                    <div class="promo-contact__status-item promo-contact__status-item_active"></div>
+                <div class="promo-contact__status" >
+                    <a href="#promo" class="status" data-menu="1"><div class="promo-contact__status-item" ></div></a>
+                    <a href="#about" class="status" data-menu="2"><div class="promo-contact__status-item "  ></div></a>
+                    <a href="#contact" class="status" data-menu="3"><div class="promo-contact__status-item promo-contact__status-item_active" ></div></a>
                 </div>
             </div>
 
         </div>
         <div class="promo-info about-main contact-main">
-            <form action="#" class="contact-form">
+            <form action="#" class="contact-form" id="order-form">
                 <input type="text" class="contact-form__input" placeholder="Введіть Ім’я" name="name">
                 <input type="text" class="contact-form__input tel" placeholder="Введіть Телефон" name="tel">
                 <input type="email" class="contact-form__input" placeholder="Введіть Електронну пошту" name="email">
@@ -175,6 +185,9 @@
 
         </div>
     </section>
+     </div>
+    
+    </div>
     <footer class="social">
         <ul class="promo-nav__soc">
                 <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/fb.svg" alt="facebook"></a></li>
@@ -182,7 +195,6 @@
                 <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
             </ul>
     </footer>
-    </div>
     <script src="https://kit.fontawesome.com/9bedbb219d.js" crossorigin="anonymous"></script>
     <script src="./js/bundle.js"></script>
 </body>
