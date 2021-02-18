@@ -1,141 +1,19 @@
 .promo
-    height: 100vh
-    display: flex
-    position: relative
-    font-size: 1rem
-    .promo-contact__status-item_active
+    .block-main__status-item_active
         &::after
             content: "01"
             +after
-    &-nav
-        position: fixed
-        left: 50%
-        top: 40px
-        width: 50%
-        display: flex
-        justify-content: space-around
-        z-index: 2
-        &__cross
-            display: none
-        &__soc
-            display: flex
-            width: 20%
-            justify-content: space-around
-            padding: 0 20px
-            &-item
-                width: 1.2rem
-        &__list
-            display: flex
-            justify-content: space-between
-            align-items: center
-            margin: 0
-            padding: 0
-            width: 60%
-        &__item
-
-            position: relative
-            a
-
-                font-style: normal
-                font-weight: 500
-                font-size: 1rem
-                line-height: 1.2em
-                color: #FFFFFF
-            &_active
-                &::after
-                    content: ""
-                    display: block
-                    position: absolute
-                    width: 100%
-                    height: 0px
-                    background: #FFFFFF
-                    border: 2px solid #FFFFFF
-
-    &-contact
-        width: 30%
+    &-main
         padding: 5.5vh 5% 2.5vh 10%
-        position: relative
-        &__wrapper
-            position: relative
-            height: 100%
-        &__status
-            display: flex
-            width: 40%
-            justify-content: space-between
-            position: absolute
-            bottom: 10px
-            left: 50%
-            transform: translateX(-50%)
-            &-item
-                width: 40px
-                height: 40px
-                background: #D8D8D8
-                border-radius: 50%
-                position: relative
-                cursor: pointer
-                &::before
-                    content: ""
-                    display: block
-                    width: 70%
-                    height: 70%
-                    position: absolute
-                    top: 50%
-                    left: 50%
-                    transform: translate(-50%, -50%)
-                    background: #bebebe
-                    border-radius: 50%
-
-                &_active
-                    &::before
-                        background: $main_color
-        &__logo
-            height: 7vh
-            margin-bottom: 10vh
-            display: inline-block
-            img
-                height: 100%
         &__form
-            display: flex
-            flex-direction: column
-            &-title
-                font-weight: 500
-                font-size: 2.1rem
-                line-height: 1.1em
-                text-align: center
-                color: #6A6A6A
-                margin-bottom: 2vh
-                span
-                    color: $main_color
-            &-subtitle
-                font-size: 1rem
-                line-height: 1.3em
-                text-align: center
-                color: #828282
-                margin-bottom: 2vh
             input
-                padding: 3vh
-                border: none
-                font-family: "Visby Round CF"
-                font-style: italic
-                font-weight: 300
-                font-size: 1rem
-                line-height: 1.3em
-                letter-spacing: 0.025rem
                 color: #828282
-            &-btn
-                height: 10vh
-                background: $main_color
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.21)
-                border: none
-                font-weight: 500
-                font-size: 1rem
-                line-height: 1.3em
-                color: #FFFFFF
+                border: 2px solid #C5C5C5
+
             &-input
                 margin-bottom: 3vh
                 position: relative
                 width: calc(100% - 4px)
-                border: 2px solid #C5C5C5
                 &::before
                     position: absolute
                     display: block
@@ -150,19 +28,7 @@
                 &_tel
                     &::before
                         content: "Телефон"
-    &-info
-        background: $main_color
-        height: 100%
-        width: 70%
-        position: relative
-        &__bg
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            img
-                filter: opacity(75%)
+    &-aside
         &__img
             height: 80%
             position: absolute

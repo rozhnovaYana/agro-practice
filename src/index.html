@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="fonts/BwSurco/stylesheet.css">
     <link rel="stylesheet" href="fonts/VisbyRoundCF-Regular/stylesheet.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Agro-practice</title>
 </head>
 <body>
     <div class="modal">
-            <div class="modal-wrapper">
-                <div class="modal-text modal-check">&#10003;</div>
-                <div class="modal-text text">Ваш запит успішно надіслано</div>
-            </div>
-            
+        <div class="modal-wrapper">
+            <div class="modal-text modal-check">&#10003;</div>
+            <div class="modal-text text">Ваш запит успішно надіслано</div>
+        </div> 
+    </div>
+    <nav class="nav" id="menu">
+        <div class="nav__cross cross">
+            &#10006;	
         </div>
-    <nav class="promo-nav" id="menu">
-            <div class="promo-nav__cross cross">
-                &#10006;	
-            </div>
-            <ul class="promo-nav__list">
-                <li class="promo-nav__item promo-nav__item_active menu-item"  data-menu="1"><a href="#promo">Головна</a></li>
-                <li class="promo-nav__item menu-item" data-menu="2"><a href="#about">Про Нас</a></li>
-                <li class="promo-nav__item menu-item" data-menu="3"><a href="#contact">Контакти</a></li>
-            </ul>
-            <ul class="promo-nav__soc">
-                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </nav>
+        <ul class="nav__list">
+            <li class="nav__item nav__item_active menu-item"  data-menu="1"><a href="#promo">Головна</a></li>
+            <li class="nav__item menu-item" data-menu="2"><a href="#about">Про Нас</a></li>
+            <li class="nav__item menu-item" data-menu="3"><a href="#contact">Контакти</a></li>
+        </ul>
+        <ul class="nav__soc">
+            <li class="nav__soc-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li class="nav__soc-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li class="nav__soc-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
     <div class="humb">
         <span></span>
         <span></span>
@@ -39,136 +38,136 @@
     </div>
     <div id="slider">
     <div class="slide">
-    <section id="promo" class="promo" data-menu="1">
-        <div class="promo-contact">
-            <div class="promo-contact__wrapper">
-                <div class="promo-contact__logo">
-                    <img src="./img/logo.svg" alt="logo">
+    <section id="promo" class="block promo" data-menu="1">
+        <div class="block-main promo-main">
+            <div class="block-main__wrapper">
+                <div class="block-main__logo">
+                    <img src="./img/about/Logo.svg" alt="logo">
                 </div>
-                <form action="#" class="promo-contact__form" id="data-form">
-                    <div class="promo-contact__form-title">Amet <span>minim mollit</span> non deserunt aliqua </div>
-                    <div class="promo-contact__form-subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </div>
-                    <div class="promo-contact__form-input promo-contact__form-input_name">
+                <form action="#" class="form promo-main__form" id="data-form">
+                    <div class="promo-main__form-title title-main">Amet <span>minim mollit</span> non deserunt aliqua </div>
+                    <div class="title-mini">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </div>
+                    <div class="promo-main__form-input promo-main__form-input_name">
                         <input type="text" placeholder="Людмила" name="name">
                     </div>
-                    <div class="promo-contact__form-input promo-contact__form-input_tel">
+                    <div class="promo-main__form-input promo-main__form-input_tel">
                         <input type="tel" placeholder="+38 (067) 123 - 45 - 67" name="phone" class="tel">
                     </div>
-                    <button class="promo-contact__form-btn" >Відправити</button>
+                    <button class="button promo-main__form-btn" >Відправити</button>
                 </form>
-                <div class="promo-contact__status" data-status="1">
-                    <a href="#promo" class="status" data-menu="1"><div class="promo-contact__status-item promo-contact__status-item_active" ></div></a>
-                    <a href="#about" class="status" data-menu="2"><div class="promo-contact__status-item"></div></a>
-                    <a href="#contact" class="status" data-menu="3"><div class="promo-contact__status-item"></div></a>
+                <div class="block-main__status" data-status="1">
+                    <a href="#promo" class="status" data-menu="1"><div class="block-main__status-item block-main__status-item_active" ></div></a>
+                    <a href="#about" class="status" data-menu="2"><div class="block-main__status-item"></div></a>
+                    <a href="#contact" class="status" data-menu="3"><div class="block-main__status-item"></div></a>
                 </div>
             </div>
-
         </div>
-        <div class="promo-info">
-            <div class="promo-info__img">     
+        <div class="block-aside promo-aside">
+            <div class="promo-aside__img">     
                     <img src="./img/promo/promo.png" alt="man">
             </div>
-
         </div>
     </section>
     </div>
     <div class="slide">
-    <section class="promo about" id="about" data-menu="2">
-       
-        <div class="promo-contact about-aside">
-            <div class="promo-contact__wrapper about-aside__wrapper">
-                <div class="promo-contact__logo">
-                    <img src="./img/logo.svg" alt="logo">
+    <section class="block promo about" id="about" data-menu="2">
+        <div class="block-main about-main">
+            <div class="block-main__wrapper">
+                <div class="block-main__logo">
+                    <img src="./img/about/Logo.svg" alt="logo">
                 </div>
-                <div class="about-aside__info">
-                    <div class="promo-contact__form-title">Amet <span>minim mollit</span> non deserunt aliqua </div> 
-                    <ul class="about-aside__list">
-                        <li class="about-aside__item">
-                            <div class="about-aside__img">
+                <div class="block-main__info about-main__info">
+                    <div class="title-main">Amet <span>minim mollit</span> non deserunt aliqua </div> 
+                    <ul class="block-main__list">
+                        <li class="block-main__item">
+                            <div class="block-main__img">
                                  <img src="./img/about/people.svg" alt="people">
                             </div>
-                            <div class="about-aside__text">Ми відбираємо найкращих студентів з ВУЗів</div>
+                            <div class="block-main__text">Ми відбираємо найкращих студентів з ВУЗів</div>
                         </li>
-                        <li class="about-aside__item">
-                            <div class="about-aside__img">
+                        <li class="block-main__item">
+                            <div class="block-main__img">
                                 <img src="./img/about/passport.svg" alt="passport">
                             </div>
-                            <div class="about-aside__text">Наші практиканти проходять іспит КЕТ, 
+                            <div class="block-main__text">Наші практиканти проходять іспит КЕТ, 
                             тому володіють англійською мовою</div>
                         </li>
-                        <li class="about-aside__item">
-                            <div class="about-aside__img">
+                        <li class="block-main__item">
+                            <div class="block-main__img">
                                 <img src="./img/about/test.svg" alt="test">
                             </div>
-                            <div class="about-aside__text">Ми готуємо повний пакет документів, тому практиканти прибувають до Вас легально по візі</div>
+                            <div class="block-main__text">Ми готуємо повний пакет документів, тому практиканти прибувають до Вас легально по візі</div>
                         </li>
                     </ul>
                 </div>
-                <div class="promo-contact__status" >
-                    <a href="#promo" class="status" data-menu="1"><div class="promo-contact__status-item" ></div></a>
-                    <a href="#about" class="status" data-menu="2"><div class="promo-contact__status-item promo-contact__status-item_active" ></div></a>
-                    <a href="#contact" class="status" data-menu="3"><div class="promo-contact__status-item" ></div></a>
+                <div class="block-main__status" >
+                    <a href="#promo" class="status" data-menu="1"><div class="block-main__status-item" ></div></a>
+                    <a href="#about" class="status" data-menu="2"><div class="block-main__status-item block-main__status-item_active" ></div></a>
+                    <a href="#contact" class="status" data-menu="3"><div class="block-main__status-item" ></div></a>
                 </div>
             </div>
 
         </div>
-        <div class="promo-info about-main">
-            <div class="about-main__texts">
-                <div class="about-main__text about-main__text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor enim consectetur donec fringilla sit tortor ut ultrices enim. Rhoncus, amet tellus tincidunt neque, vivamus vivamus suspendisse. </div>
-                <div class="about-main__text about-main__text_right">Libero posuere nulla in leo scelerisque. Mollis condimentum massa integer sed egest</div>
+        <div class="block-aside about-aside">
+            <div class="about-aside__texts">
+                <div class="about-aside__text about-aside__text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor enim consectetur donec fringilla sit tortor ut ultrices enim. Rhoncus, amet tellus tincidunt neque, vivamus vivamus suspendisse. </div>
+                <div class="about-aside__text about-aside__text_right">Libero posuere nulla in leo scelerisque. Mollis condimentum massa integer sed egest</div>
             </div>
-            <div class="about-main__img">
+            <div class="about-aside__img">
                 <img src="./img/about/Team.png" alt="Team">
             </div>
-           
-
+            <div class="about-aside__bg">
+                <img src="./img/about/Logo.png" alt="">
+            </div>
         </div>
     </section>
     </div>
     <div class="slide">
-    <section class="contact promo " id="contact" data-menu="3">
-       
-        <div class="promo-contact about-aside contact-aside">
-            <div class="promo-contact__wrapper about-aside__wrapper">
-                <div class="promo-contact__logo">
-                    <img src="./img/logo.svg" alt="logo">
+    <section class="block contact" id="contact" data-menu="3">
+        <div class="block-main contact-main">
+            <div class="block-main__wrapper">
+                <div class="block-main__logo">
+                    <img src="./img/about/Logo.svg" alt="logo">
                 </div>
-                <div class="about-aside__info">
-                    <div class="promo-contact__form-title">Amet <span>minim mollit</span> non deserunt aliqua </div> 
-                     <div class="promo-contact__form-subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </div>
-                    <ul class="about-aside__list contact-aside__list">
-                        <li class="about-aside__item">
-                            <div class="about-aside__img contact-aside__img">
+                <div class="block-main__info contact-main__info">
+                    <div class="title-main">Amet <span>minim mollit</span> non deserunt aliqua </div> 
+                     <div class="title-mini">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </div>
+                    <ul class="block-main__list contact-main__list">
+                        <li class="block-main__item">
+                            <div class="block-main__img contact-main__img">
                                  <img src="./img/contact/geo.svg" alt="geo">
                             </div>
-                            <div class="about-aside__text contact-aside__text">2118 Thornridge Cir. Syracuse, Connecticut 3564</div>
+                            <div class="block-main__text contact-main__text">2118 Thornridge Cir. Syracuse, Connecticut 3564</div>
                         </li>
-                        <li class="about-aside__item">
-                            <div class="about-aside__img contact-aside__img">
+                        <li class="block-main__item">
+                            <div class="block-main__img contact-main__img">
                                 <img src="./img/contact/tel.svg" alt="tel">
                             </div>
-                            <div class="about-aside__text contact-aside__text">+38 (067) 555-01-23</div>
+                            <div class="block-main__text contact-main__text">+38 (067) 555-01-23</div>
                         </li>
                     </ul>
                 </div>
-                <div class="promo-contact__status" >
-                    <a href="#promo" class="status" data-menu="1"><div class="promo-contact__status-item" ></div></a>
-                    <a href="#about" class="status" data-menu="2"><div class="promo-contact__status-item "  ></div></a>
-                    <a href="#contact" class="status" data-menu="3"><div class="promo-contact__status-item promo-contact__status-item_active" ></div></a>
+                <div class="block-main__status" >
+                    <a href="#promo" class="status" data-menu="1"><div class="block-main__status-item" ></div></a>
+                    <a href="#about" class="status" data-menu="2"><div class="block-main__status-item "  ></div></a>
+                    <a href="#contact" class="status" data-menu="3"><div class="block-main__status-item block-main__status-item_active" ></div></a>
                 </div>
             </div>
 
         </div>
-        <div class="promo-info about-main contact-main">
+        <div class="block-aside contact-aside">
+            <div class="contact-aside__bg">
+                <img src="./img/about/Logo.png" alt="">
+            </div>
             <form action="#" class="contact-form" id="order-form">
-                <input type="text" class="contact-form__input" placeholder="Введіть Ім’я" name="name">
-                <input type="text" class="contact-form__input tel" placeholder="Введіть Телефон" name="phone">
-                <input type="email" class="contact-form__input" placeholder="Введіть Електронну пошту" name="email">
+                <input type="text" class="contact-form__input"  data-input="2"placeholder="Введіть Ім’я" name="name">
+                <input type="text" class="contact-form__input tel"  data-input="2"placeholder="Введіть Телефон" name="phone">
+                <input type="email" class="contact-form__input"  data-input="2"placeholder="Введіть Електронну пошту" name="email">
                 <div class="select">
-                    <input class="select__input" type="hidden" name="specialization"> 
+                    <input class="select__input"  data-input="2"type="hidden" name="specialization" value="Оберіть Спеціалізацію працівників"> 
                     <div class="select__head">Оберіть Спеціалізацію працівників</div>
                     <ul class="select__list" >
-                        <li class="select__item">Стилизация select CSS</li>
+                        <li class="select__item">Оберіть Спеціалізацію працівників</li>
                         <li class="select__item">Стилизация select JavaScript</li>
                         <li class="select__item">Стилизация select, используя input</li>
                     </ul>  
@@ -177,22 +176,19 @@
                 <label for="count">Кількість працівників</label>
                 <div class="contact-form__range">
                     <div class="contact-form__range_current"></div>
-                    <input type="range" id="count" name="count" min="0" max="100" value="75" step="1">
+                    <input type="range" id="count" name="count" min="0" max="100" value="75" step="1" data-input="2">
                 </div>
-                <button class="promo-contact__form-btn contact-form__btn">Відправити</button>
+                <button class="button contact-form__btn">Відправити</button>
             </form>
-           
-
         </div>
     </section>
      </div>
-    
     </div>
     <footer class="social">
-        <ul class="promo-nav__soc">
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/fb.svg" alt="facebook"></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/twit.svg" alt="twitter"></a></li>
-                <li class="promo-nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
+        <ul class="nav__soc">
+                <li class="nav__soc-item"><a href="#"><img src="./img/promo/fb.svg" alt="facebook"></a></li>
+                <li class="nav__soc-item"><a href="#"><img src="./img/promo/twit.svg" alt="twitter"></a></li>
+                <li class="nav__soc-item"><a href="#"><img src="./img/promo/inst.svg" alt="instagram"></a></li>
             </ul>
     </footer>
     <script src="https://kit.fontawesome.com/9bedbb219d.js" crossorigin="anonymous"></script>

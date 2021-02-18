@@ -25,9 +25,26 @@ ul
     padding: 0
 button
     cursor: pointer
+    &:focus
+        outline: none
+
 input
     box-sizing: border-box
     width: 100%
+    &:focus
+        border: 1px solid green
+        outline: 1px solid green
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus
+    -webkit-text-fill-color: black
+    transition: background-color 5000s ease-in-out 0s
 #contact
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
@@ -49,6 +66,10 @@ input
     color: white
     font-size: 1.2rem
 @import "./blocks/mixins"
+@import "./blocks/btn"
+@import "./blocks/form"
+@import "./blocks/title"
+@import "./blocks/block"
 @import "./blocks/promo"
 @import "./blocks/about"
 @import "./blocks/contact"
@@ -56,4 +77,5 @@ input
 @import "./blocks/social"
 @import "./blocks/humb"
 @import "./blocks/modal"
+@import "./blocks/nav"
 @import "./blocks/media"

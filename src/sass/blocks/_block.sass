@@ -1,0 +1,72 @@
+.block
+    height: 100vh
+    display: flex
+    position: relative
+    font-size: 1rem
+    &-main
+        width: 30%
+        padding: 5.5vh 5% 2.5vh 10%
+        position: relative
+        &__item
+            display: flex
+            margin: 20px 0
+        &__text
+            margin-left: 15px
+            font-style: normal
+            font-weight: normal
+            font-size: 1rem
+            line-height: 1.2em
+            color: #6A6A6A
+        &__img
+            width: 50px
+            height: 50px
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            img
+                width: auto
+                height: 100%
+        &__wrapper
+            position: relative
+            height: 100%
+        &__logo
+            height: 7vh
+            margin-bottom: 10vh
+            display: inline-block
+            img
+                height: 100%
+        &__status
+            display: flex
+            width: 40%
+            justify-content: space-between
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+            &-item
+                width: 40px
+                height: 40px
+                background: #D8D8D8
+                border-radius: 50%
+                position: relative
+                cursor: pointer
+                &::before
+                    content: ""
+                    display: block
+                    width: 70%
+                    height: 70%
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    background: #bebebe
+                    border-radius: 50%
+
+                &_active
+                    &::before
+                        background: $main_color
+    &-aside
+        background: $main_color
+        height: 100%
+        width: 70%
+        position: relative

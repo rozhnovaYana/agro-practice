@@ -6,11 +6,11 @@ export default function scroll() {
         changeSlide(startDelta-100)
         function changeSlide(count) {
             wrapper.style.transform = `translateY(-${height * count / 100}px)`;
-            const menuList = document.querySelectorAll('.promo-nav__item');
+            const menuList = document.querySelectorAll('.nav__item');
             menuList.forEach((item) => {
-                item.classList.remove("promo-nav__item_active")
+                item.classList.remove("nav__item_active")
                 if (item.getAttribute("data-menu") == (count / 100 + 1)) {
-                    item.classList.add('promo-nav__item_active')
+                    item.classList.add('nav__item_active')
                 }
             })
         }
@@ -53,7 +53,7 @@ export default function scroll() {
             })
         })
     }
-    menuListNav(".promo-nav__item");
+    menuListNav(".nav__item");
     menuListNav(".status");
 
 

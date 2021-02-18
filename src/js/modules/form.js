@@ -14,12 +14,23 @@ export default function form(formSelector, url) {
                 inp.style.border = "";
             });
         });
-            input.forEach(item => {
+        input.forEach(item => {
+                 const num = item.getAttribute("data-input");
                 if (item.value.length == 0 || item.value == " ") {
-                    item.style.border = "1px solid red";
+                    if (num) {
+                       item.style.borderBottom = "1px solid red"; 
+                    } else {
+                       item.style.border = "1px solid red"; 
+                    }
+                    
                     errors=true;
                 } else {
-                    item.style.border = "";
+                    if (num) {
+                       item.style.borderBottom = ""; 
+                    } else {
+                       item.style.border = "2px solid #C5C5C5";
+                    }
+                    
                 }
             });
         if (!errors) {

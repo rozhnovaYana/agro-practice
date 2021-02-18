@@ -2,34 +2,30 @@
     @media screen and ( max-width: 2450px )
         html
             font-size: 30px
-        .contact-form__input
-            &::placeholder
-                border: none
     @media screen and ( max-width: 1750px )
         html
             font-size: 25px
-        .contact-form__input
-            &::placeholder
-                border: none
-//ниже 1330 (ширина) при такой высоте делаем  мобайл
 @media screen and ( max-height:1000px  )
     @media screen and ( max-width: 2450px )
         html
-            font-size: 25px
-        .promo-contact__status-item
+            font-size: 22px
+        .block-main__status-item
             width: 30px
             height: 30px
-        .about-main__img img
+        .about-aside__img img
             width: 85%
-        .contact-form
-            margin: 15% 0 0 80px
-            &__range_current
-                bottom: 10px
-        .contact-form label
-            border-bottom: none
-        .contact-form__input
-            &::placeholder
-                border: none
+        .contact
+            &-form
+                margin: 15% 0 0 80px
+                &__range_current
+                    bottom: 10px
+                label
+                    border-bottom: none
+                    margin-top: 15px
+                &__btn
+                    margin-top: 10px
+                    &::placeholder
+                        border: none
 
     @media screen and ( max-width: 1750px )
         html
@@ -41,21 +37,40 @@
         .contact-form__input
             &::placeholder
                 border: none
+    @media screen and ( max-width: 1660px )
+        html
+            font-size: 18px
+        .contact-form
+            margin: 20% 0 0 80px
+
+    @media screen and ( max-width: 1071px )
+        html
+            font-size: 16px
+        .contact-form
+            margin: 25% 0 0 80px
 
 @media screen and ( max-height:818px  )
     @media screen and ( max-width: 1750px )
+        .nav
+            top: 50px
         html
             font-size: 18px
-        .promo-contact__status-item
+        .button
+            height: 10vh
+        .form
+            input
+                padding: 20px 15px
+
+        .block-main__status-item
             width: 20px
             height: 20px
-
-        .about-main__img img
+        .about-aside__img img
             width: 85%
         .contact-form
+            margin: 15% 0 0 80px
             #count
                 margin: 20px 0 50px 0
-                height: 20px
+                height: 10px
                 &::-webkit-slider-thumb
                     width: 10px
                     height: 35px
@@ -69,33 +84,45 @@
                 &::placeholder
                     border: none
 
-    @media screen and ( max-width: 1300px )
+    @media screen and ( max-width: 1340px )
         html
             font-size: 17px
-        .promo-contact__status-item
+        .block-main__status-item
             width: 20px
             height: 20px
 
-        .about-main__img img
+        .about-aside__img img
             width: 85%
         .select__head::after
             width: 20px
             height: 10px
-        .contact-form #count
-            margin: 20px 0 40px 0
         .contact-form
+            #count
+                margin: 20px 0 40px 0
             label
                 border-bottom: none
             &__input
                 &::placeholder
                     border: none
+        .about-aside__texts
+            margin: 25% 10% 20% 5%
 
     @media screen and ( max-width: 1200px )
         html
-            font-size: 13px
-        .contact-form label
-            border-bottom: none
-@media screen and ( max-width: 993px )
+            font-size: 15px
+        .about-aside__texts
+            margin: 30% 10% 20% 5%
+        .contact-form
+            margin: 20% 0 0 80px
+            label
+                border-bottom: none
+@media screen and ( max-width: 993px ), (orientation: portrait)
+    body
+        height: auto
+        overflow: auto
+        position: relative
+    section
+        height: auto
     .fab
         background: white
         color: $main_color
@@ -104,13 +131,12 @@
         font-size: 18px
     .humb
         display: flex
-    .promo
+    .block
         flex-direction: column
         height: auto
         overflow: visible
-        background: url('../img/promo/bg.png') center center/contain repeat
-
-        &-contact
+        box-sizing: border-box
+        &-main
             padding: 0
             width: 100%
             margin-bottom: 142px
@@ -118,15 +144,6 @@
                 display: none
             &__wrapper
                 width: 100%
-            &__form
-                margin: 0 auto
-                width: 500px
-                input
-                    padding: 30px
-                &-subtitle
-                    width: 80%
-                    margin: 0px auto 25px
-
             &__logo
                 width: calc(100% - 40px)
                 height: 71px
@@ -134,9 +151,24 @@
                 margin: 0 0 87px 0
                 box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07)
                 background: white
+                position: fixed
+                z-index: 4
                 img
                     width: initial
-        &-info
+
+    .promo
+        margin-bottom: 100px
+        .title-mini
+            width: 80%
+            margin: 0px auto 25px
+        &-main
+            &__form
+                margin: 0 auto
+                width: 500px
+                padding-top: 150px
+                input
+                    padding: 30px
+        &-aside
             height: 215px
             width: 100%
             &__img
@@ -144,7 +176,7 @@
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
-    .promo-nav
+    .nav
         position: fixed
         width: 70%
         height: 100%
@@ -158,11 +190,14 @@
         right: -100%
         opacity: 0
         justify-content: flex-start
-        &__soc
-            width: 40%
         &_active
             opacity: 1
             right: 0
+        &__soc
+            width: 200px
+            &-item
+                i
+                    font-size: 3em
         &__cross
             display: block
             position: fixed
@@ -171,7 +206,6 @@
             font-size: 48px
         &__list
             flex-direction: column
-            width: 70%
             align-items: flex-start
             margin-top: 20%
             margin-bottom: 150px
@@ -192,22 +226,20 @@
             a
                 font-style: normal
                 font-weight: normal
-                font-size: 44px
+                font-size: 2rem
                 line-height: 1.2em
                 color: #6A6A6A
     .about
-        padding: 93px 0
-        flex-direction: column
-        height: auto
-        background: url('../img/promo/bg.png') center center/contain repeat
-        .promo-contact__logo
+        .block-main__logo
             display: none
-        &-aside
+        &-main
+            margin-bottom: 90px
             &__info
                 width: 422px
                 margin: 0 auto
-        &-main
+        &-aside
             height: 565px
+            width: 100%
             &__texts
                 flex-direction: column
                 width: 80%
@@ -229,44 +261,59 @@
     .contact
         flex-direction: column
         padding: 0px 0px 93px
-        &-aside
+        &-main
+            margin-bottom: 20px
+            &__info
+                width: 422px
+                margin: 0 auto
             &__list
                 margin: 0 auto
                 width: 60%
             &__img
                 width: 36px
                 height: 30px
-        &-main
+
+        &-aside
             background: none
             height: auto
+            width: 100%
+            position: relative
+            &__bg
+                left: 50%
+                transform: translateX(-50%)
+                top: -10%
+                height: 100%
+                z-index: -1
         &-form
             width: 60%
             margin: 0 auto
+            z-index: 5
             &__input
                 &::placeholder
                     border: none
-        .promo-contact__logo
+                    color: rgba(120, 120, 120, 0.34)
+        .block-main__logo
             display: none
         .select__head::after
             background: white url("../img/select/arrow-black.png") no-repeat center / cover
         .contact-form label
             border-bottom: none
-        .about-aside__info
-            width: 85%
-        .promo-contact
-            margin-bottom: 30px
         .contact-form
+            input
+                padding: 20px 10px
             label
                 border-bottom: none
+                color: rgba(120, 120, 120, 0.34)
             &__range
                 &_current
                     color: $main_color
-                    bottom: 30%
+                    bottom: 0%
             &__btn
                 height: 100px
             #count
-                height: 10px
-                background: #a5a5a5
+                height: 5px
+                padding: 0
+                background: #c9c8c8
                 &::-webkit-slider-thumb
                     width: 10px
                     height: 35px
@@ -277,36 +324,104 @@
                     background: $main_color
                 &::before, &::after
                     color: #a5a5a5
+    .select__head
+        color: rgba(120, 120, 120, 0.34)
+        padding: 20px 10px
     .social
         display: flex
+    .button
+        height: 75px
+    .title-mini
+        margin: 30px auto
+    #contact
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus
+            -webkit-text-fill-color: black
+            transition: background-color 5000s ease-in-out 0s
+    .modal
+        &-wrapper
+            width: 50%
+    .contact .select__head::after
+        background: url('../img/select/arrow-black')
 
 @media screen and ( max-width: 576px )
     html
         font-size: 14px
-    .promo
-        &-contact
-            margin-bottom: 90px
-            &__form
-                width: 90%
-                input
-                    padding: 10px 15px
-                    height: 40px
-                    width: calc(100% - 30px)
-
-                &-subtitle
-                    width: 100%
-                    margin-top: 15px
+    .modal
+        &-wrapper
+            width: 70%
+    .nav
+        &__soc
+            width: 60%
+        &__cross
+            top: 20px
+            right: 20px
+            font-size: 25px
+        &__item
+            padding: 10px 20px
+        &__list
+            margin-top: 100px
+            margin-bottom: 30px
+    .humb
+        top: 20px
+        right: 20px
+        width: 21px
+        height: 18px
+    .button
+        height: 58px
+    .block
+        &-main
+            &__info
+                width: 80%
             &__logo
                 width: calc(100% - 30px)
                 height: 32px
                 padding: 12px 0 12px 30px
                 margin-bottom: 35px
-        &-info
+
+    .promo
+        margin-bottom: 0
+        &-main
+            margin-bottom: 90px
+            &__form
+                width: 90%
+                padding-top: 100px
+                input
+                    padding: 10px 15px
+                    height: 40px
+                    width: 100%
+                &-subtitle
+                    width: 100%
+                    margin-top: 15px
+        &-aside
             height: 144px
     .about
         padding: 93px 0 30px
+        &-aside
+            height: 451px
+            &__text
+                font-size: 1.2rem
+                line-height: 1.5 em
+            &__bg
+                height: 100%
+                width: 100%
+                bottom: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                display: flex
+                align-items: center
+            &__img
+                width: 100%
         &-main
-            height: 430px
+            margin-bottom: 0
+            height: 380px
             &__img
                 img
                     width: 120%
@@ -317,9 +432,73 @@
             &__input
                 &::placeholder
                     border: none
-        &-aside
+        &-main
             margin-bottom: 20px
             &__list
                 width: 90%
-        &-main
+        &-aside
             height: auto
+        .contact-form__btn
+            height: 52px
+// @media ( max-width: 768px  )
+//     @media  ( max-height: 576px )
+//         html
+//             font-size: 14px
+//     .nav
+//         &__soc
+//             width: 60%
+//         &__cross
+//             top: 20px
+//             right: 20px
+//             font-size: 25px
+//         &__item
+//             padding: 10px 20px
+//         &__list
+//             margin-top: 100px
+//             margin-bottom: 30px
+//     .humb
+//         top: 20px
+//         right: 20px
+//         width: 21px
+//         height: 18px
+
+//     .promo
+//         &-contact
+//             margin-bottom: 90px
+//             &__form
+//                 width: 90%
+//                 input
+//                     padding: 10px 15px
+//                     height: 40px
+//                     width: calc(100% - 30px)
+
+//                 &-subtitle
+//                     width: 100%
+//                     margin-top: 15px
+//             &__logo
+//                 width: calc(100% - 30px)
+//                 height: 32px
+//                 padding: 12px 0 12px 30px
+//                 margin-bottom: 35px
+//         &-info
+//             height: 144px
+//     .about
+//         padding: 93px 0 30px
+//         &-main
+//             height: 430px
+//             &__img
+//                 img
+//                     width: 120%
+//     .contact
+//         padding: 10px 0 30px
+//         &-form
+//             width: 85%
+//             &__input
+//                 &::placeholder
+//                     border: none
+//         &-aside
+//             margin-bottom: 20px
+//             &__list
+//                 width: 90%
+//         &-main
+//             height: auto

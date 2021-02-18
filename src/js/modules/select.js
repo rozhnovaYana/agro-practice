@@ -10,6 +10,9 @@ export default function select(){
         item.addEventListener("click", () => {
             select.querySelector(".select__head").innerText = item.innerText
             select.querySelector(".select__input").value = item.innerText
+            if (document.documentElement.clientWidth < 992) {
+                selectHeader.style.color="black"
+            }
             selectToggle()
         })
     })
