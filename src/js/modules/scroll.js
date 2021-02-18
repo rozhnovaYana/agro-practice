@@ -6,11 +6,18 @@ export default function scroll() {
         changeSlide(startDelta-100)
         function changeSlide(count) {
             wrapper.style.transform = `translateY(-${height * count / 100}px)`;
-            const menuList = document.querySelectorAll('.nav__item');
+            const menuList = document.querySelectorAll('.nav__item'),
+                nav = document.querySelectorAll(".block-main__status-item");
             menuList.forEach((item) => {
                 item.classList.remove("nav__item_active")
                 if (item.getAttribute("data-menu") == (count / 100 + 1)) {
                     item.classList.add('nav__item_active')
+                }
+            })
+             nav.forEach((item) => {
+                item.classList.remove("block-main__status-item_active")
+                if (item.getAttribute("data-menu") == (count / 100 + 1)) {
+                    item.classList.add('block-main__status-item_active')
                 }
             })
         }
@@ -47,14 +54,13 @@ export default function scroll() {
         menuList.forEach((item) => {
             item.addEventListener("click", (e) => {
                 let num = +item.getAttribute("data-menu");
-                console.log(num)
                 scrollWrapper("#slider", (num * 100))
        
             })
         })
     }
     menuListNav(".nav__item");
-    menuListNav(".status");
+    menuListNav(".block-main__status-item");
 
 
 
