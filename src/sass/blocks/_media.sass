@@ -347,16 +347,30 @@
             transition: background-color 5000s ease-in-out 0s
     .modal
         &-wrapper
-            width: 50%
+            width: 450px
+            height: 200px
     .contact .select__head::after
         background: url('../img/select/arrow-black')
+@media ( max-width: 768px ) and (orientation: landscape)
+    .nav
+        &__item a
+            font-size: 1rem
+        &__list
+            margin: 50px 0
+        &__cross
+            font-size: 20px
+        &__soc
+            &-item
+                i
+                    font-size: 2em
 
 @media screen and ( max-width: 576px )
     html
         font-size: 14px
     .modal
         &-wrapper
-            width: 70%
+            width: 250px
+            height: 100px
     .nav
         &__soc
             width: 60%
