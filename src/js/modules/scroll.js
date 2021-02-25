@@ -7,7 +7,15 @@ export default function scroll() {
         function changeSlide(count) {
             wrapper.style.transform = `translateY(-${height * count / 100}px)`;
             const menuList = document.querySelectorAll('.nav__item'),
-                nav = document.querySelectorAll(".block-main__status-item");
+                nav = document.querySelectorAll(".block-main__status-item"),
+                menuLink = document.querySelector(".menu-list")
+            if (count / 100 == 2) {
+                menuLink.classList.remove("nav__list")
+                menuLink.classList.add("nav__list_green")
+            } else {
+                menuLink.classList.add("nav__list")
+                menuLink.classList.remove("nav__list_green")
+            }
             menuList.forEach((item) => {
                 item.classList.remove("nav__item_active")
                 if (item.getAttribute("data-menu") == (count / 100 + 1)) {

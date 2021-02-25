@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     form("#order-form","mailer/smart_order.php")
 if (document.documentElement.clientHeight > 500 && document.documentElement.clientWidth > 992&&landscape) {
     scroll()
-} else if (document.documentElement.clientWidth < 992) {
+
+}
+else if (document.documentElement.clientWidth < 992) {
     document.querySelector(".contact-aside__bg").innerHTML= `<img src="./img/contact/logo_mobile.png" alt=""></img>`
     smoothScroll("#promo")
     smoothScroll("#about")
